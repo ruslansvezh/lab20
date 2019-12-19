@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+	setlocale(0, "");
+
+	int N = 0;
+	string lineS;
+	cout << "Введите строку S : ";
+	getline(cin, lineS);
+
+	string lineS0;
+	cout << "Введите строку S0 (English) : ";
+	getline(cin, lineS0);
+
+	int k = 0;
+
+	for (int i = 0; i < lineS.size(); i++) 
+	{
+		if (lineS[i] == lineS0[0])
+		{
+			k++;
+		}
+		if (k == lineS0.size())
+		{
+			N++;
+			k = 0;
+		}
+	}
+
+	cout << "В строке S " << N << " строк S0" << endl;
+}
