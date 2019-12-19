@@ -1,0 +1,11 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	cout << "Вам был дан символ С!" << endl;//(99)
+	char simbol= 'c';
+	cout << "Символ до -с: " << char(simbol - 1) << endl;
+	cout << "Символ после -с: " << char(simbol + 1) << endl;
+}
