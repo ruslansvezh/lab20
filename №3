@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main() 
+{
+	setlocale(0, "");
+	int num = 0;
+	string line;
+
+	cout << "Введите строку: ";
+	getline(cin, line);
+	cout << "Длина введенной строки: " << line.size();
+
+	for (int i = 0; i < line.size(); i++) 
+	{
+		if (line[i] >= (65) && line[i] <= (90)) 
+		{
+			num++;
+		}
+	}
+	cout << "Кол-во прописных букв латинского алфавита=" << num;
+}
